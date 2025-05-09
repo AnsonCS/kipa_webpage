@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kipa Shrestha Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/assets/styles/style.css" />
+  <link rel="stylesheet" href="/assets/styles/landing.css" />
+  <link rel="stylesheet" href="/assets/styles/about.css" />
+  <link rel="stylesheet" href="/assets/styles/contact.css" />
+  <link rel="stylesheet" href="/assets/styles/nav.css" />
 </head>
+
 <body>
 
+  <!-- Navigation bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/images/bird_placeholder.jpg" alt="Logo" class="logo-img" width="40" height="40" />
+    </div>
+    <div class="nav-center">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Landing Section -->
-  <section class="landing">
+  <section id="landing" class="landing">
     <h1>Welcome to Kipa Shrestha's Portfolio</h1>
   </section>
 
   <!-- About Me Section -->
-  <section class="about-me">
+  <section id="about" class="about-me">
     <div class="about-container">
       <!-- Images Column -->
       <div class="about-images">
-        <img src="assets/images/image_1.jpg" alt="Kipa Shrestha" class="fade-in">
-        <img src="assets/images/image_1.jpg" alt="Kipa Shrestha" class="fade-in">
+        <img src="assets/images/image_1.jpg" alt="Kipa Shrestha" class="fade-in" />
+        <img src="assets/images/image_1.jpg" alt="Kipa Shrestha" class="fade-in" />
       </div>
       <!-- Text Column -->
       <div class="about-text">
@@ -28,7 +48,30 @@
       </div>
     </div>
   </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+      <div class="contact-images">
+        <img src="assets/images/image_1.jpg" alt="Contact Image" />
+      </div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
+
 </html>
